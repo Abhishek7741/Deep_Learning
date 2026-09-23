@@ -1,12 +1,12 @@
 # Deep Learning Practical 1 – Fashion-MNIST
 
-## 📌 Problem Statement
+##  Problem Statement
 
 Install and configure TensorFlow/Keras in Google Colab. Perform data preprocessing, normalization, train-test split, and visualization on a sample dataset.
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 This practical uses the **Fashion-MNIST** dataset.
 
@@ -29,7 +29,7 @@ Fashion-MNIST contains 70,000 grayscale images of fashion items. Each image has 
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Python
 - TensorFlow / Keras
@@ -40,7 +40,7 @@ Fashion-MNIST contains 70,000 grayscale images of fashion items. Each image has 
 
 ---
 
-## 🔄 Workflow
+##  Workflow
 
 The practical follows these steps:
 
@@ -61,7 +61,7 @@ Data Visualization
         ↓
 Class Distribution
 
-📥 Dataset Loading
+ Dataset Loading
 
 The Fashion-MNIST dataset is loaded using TensorFlow/Keras.
 import tensorflow as tf
@@ -69,7 +69,7 @@ import tensorflow as tf
 (X, y), (_, _) = tf.keras.datasets.fashion_mnist.load_data()
 The images are reshaped from 28 × 28 into 784 features:
 X = X.reshape(X.shape[0], 784)
-🔧 Data Preprocessing
+ Data Preprocessing
 
 The pixel values are originally in the range 0–255.
 
@@ -78,7 +78,7 @@ X = X.astype("float32") / 255.0
 Normalized Pixel Range
 Minimum Pixel Value: 0.0
 Maximum Pixel Value: 1.0
-✂️ Train-Test Split
+Train-Test Split
 
 The dataset is divided into:
 
@@ -102,7 +102,7 @@ Testing Images  : (12000, 784)
 
 Training Labels : (48000,)
 Testing Labels  : (12000,)
-📈 Visualization
+ Visualization
 
 The practical performs the following visualizations:
 
